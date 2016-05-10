@@ -17,13 +17,22 @@ doc/winmanager.txt – 帮助文件
 
 使用winmanager插件可以控制各插件在vim窗口中的布局显示。我的vimrc中这样设置：
 
-""""""""""""""""""""""""""""""
-" winManager setting
-""""""""""""""""""""""""""""""
-let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
-let g:winManagerWidth = 30
-let g:defaultExplorer = 0
-nmap <C-W><C-F> :FirstExplorerWindow<cr>
-nmap <C-W><C-B> :BottomExplorerWindow<cr>
-nmap <silent> <leader>wm :WMToggle<cr> 
+  """"""""""""""""""""""""""""""
+  
+  " winManager setting
+  
+  """"""""""""""""""""""""""""""
+  
+  let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList
+  
+  let g:winManagerWidth = 30
+  
+  let g:defaultExplorer = 0
+  
+  nmap <C-W><C-F> :FirstExplorerWindow<cr>
+  
+  nmap <C-W><C-B> :BottomExplorerWindow<cr>
+  
+  nmap <silent> <leader>wm :WMToggle<cr>
+  
 g:winManagerWindowLayout变量的值定义winmanager的窗口布局，使用上面的设置，我们的窗口布局看起来是这样的：
